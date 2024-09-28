@@ -1,2 +1,2 @@
 # RSPFStack
-the RSFP stack. (React, Spring boot, Python/PostgreSql, Firebase)
+the RSPF stack. (React, Spring boot, Python/PostgreSql, Firebase)
