@@ -76,7 +76,7 @@ Java allows the user to create, read, update, and delete(CRUD) but if a user wan
 they can put these items in the backend which are stored within a Queue before being approved by an end-user to the database.
 The java within the program also generates distinct hashes for specific entries when added to the database with their count.
 When a user wants to access all items in the database without querying the database java will access the items in which are stored in the hash
-decrypt the has to user-readable. For the sake of sorting these items are loaded into an array list before returning to the user.
+decrypt the hash then converts to user-readable format. For the sake of sorting these items are loaded into an array list before returning to the user.
 The user can sort by name, counts, vendor, and so forth depending on their specification.
 Python is used to generate user related data to produce graphs of products sold per month, per year, rate in which they sell, etc.
 Python is mainly used for data processing.
