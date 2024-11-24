@@ -1,4 +1,5 @@
 import React from 'react';
+import '../CSS/version.css'
 
 const AppVersion = () =>{
     return(
