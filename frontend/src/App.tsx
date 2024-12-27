@@ -9,7 +9,7 @@ const App: React.FC = () => {
       <Router>
           <header>
             <nav>
-                <Link to="/">Main Page</Link> | <Link to="/Products"> Products</Link>
+
             </nav>
           </header>
           <main>
