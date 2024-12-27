@@ -15,7 +15,6 @@ const App: React.FC = () => {
           <main>
               <Routes>
                   <Route path = "/" element = {<MainPage />} />
-                  <Route path = "/Products" element = {<Products/>} />
               </Routes>
           </main>
           <VersionInfo/>
