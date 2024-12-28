@@ -11,3 +11,4 @@ const Data: React.FC =() =>{
         </div>
     );
 }
+export default Data;

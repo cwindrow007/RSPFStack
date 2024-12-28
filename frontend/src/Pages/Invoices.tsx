@@ -11,3 +11,4 @@ const Invoices: React.FC =() =>{
         </div>
     );
 }
+export default Invoices;

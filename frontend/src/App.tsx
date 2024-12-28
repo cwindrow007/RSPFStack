@@ -2,6 +2,12 @@ import React from 'react';
 import {BrowserRouter as Router, Link, Route, Routes} from 'react-router-dom';
 import MainPage from './Pages/MainPage';
 import Products from "./Pages/Products";
+import Orders from "./Pages/Orders";
+import Inventory from "./Pages/Inventory";
+import Invoices from "./Pages/Invoices";
+import Data from "./Pages/Data";
+
+
 import VersionInfo from './Components/AppVersion';
 
 const App: React.FC = () => {
@@ -15,6 +21,11 @@ const App: React.FC = () => {
           <main>
               <Routes>
                   <Route path = "/" element = {<MainPage />} />
+                  <Route path = "/Products" element = {<Products/>}/>
+                  <Route path = "/Orders" element = {<Orders/>}/>
+                  <Route path = "/Inventory" element = {<Inventory/>}/>
+                  <Route path = "/Invoices" element = {<Invoices/>}/>
+                  <Route path = "/Data" element = {<Data/>}/>
               </Routes>
           </main>
           <VersionInfo/>
