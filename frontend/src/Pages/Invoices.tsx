@@ -8,6 +8,7 @@ const Invoices: React.FC =() =>{
             <TopBar/>
             <LeftNav/>
             <h1>Invoices Page</h1>
+            <p>This is the invoices page and needs to be designed/filled</p>
         </div>
     );
 }

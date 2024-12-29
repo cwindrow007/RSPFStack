@@ -8,6 +8,7 @@ const Orders: React.FC =() =>{
             <TopBar/>
             <LeftNav/>
             <h1>Orders Page</h1>
+            <p>This is the orders page and needs to be designed/filled</p>
         </div>
     );
 }
