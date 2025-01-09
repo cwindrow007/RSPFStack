@@ -9,6 +9,7 @@ import OrdersIcon from "../Icons/Orders.png";
 import InventoryIcon from "../Icons/Inventory.png";
 import InvoicesIcon from "../Icons/Invoices.png";
 import DataIcon from "../Icons/Data.png";
+import logo from "../Icons/R__1___1_-removebg-preview.png"
 
 
 /** Nav Bar, holds data to links on the left side and program logo*/
@@ -51,6 +52,7 @@ const NavBar = () =>{
         <div className="NavBar">
             {/*Program Logo */}
             <h1 className = "Placeholder">
+                <img src = {logo}/>
                 RSPF Inventory System
             </h1>
             <div>
