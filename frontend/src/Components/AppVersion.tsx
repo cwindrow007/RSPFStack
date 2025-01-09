@@ -1,10 +1,12 @@
 import React from 'react';
 import '../CSS/version.css'
 
-const AppVersion = () =>{
+const AppVersion: React.FC = () =>{
+    const version = "0.0.1";
+
     return(
     <div className="version-info">
-    Version 0.0.0
+    Version: {version}
     </div>
 );
 };
