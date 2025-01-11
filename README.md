@@ -2,7 +2,7 @@
 
 ![Logo.png](Logo.png)
 the RSPF stack (React, Spring boot, Python/PostgreSql, Firebase) is a full-stack development project aimed to be a 
-robust inventory management system with an authentication system. It is local and will be able to be run on a raspberry Pi.
+robust inventory management system that is both optimized and user-friendly. It is local and will be able to be run on a raspberry Pi.
 
 # Front-End/User Capabilities
 The Front-End is where the user can do 99% of their work in managing inventory. It is written in React/TypeScript. 
