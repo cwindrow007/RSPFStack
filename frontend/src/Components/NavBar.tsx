@@ -15,38 +15,12 @@ import logo from "../Icons/LogoIcon.png"
 /** Nav Bar, holds data to links on the left side and program logo*/
 const NavBar = () =>{
     const linker = [
-        {
-            to: '/',
-            name: 'Main',
-            icon: HomeIcon
-        },
-        {
-            to: '/Products',
-            name: "Products",
-            icon: ProductsIcon
-        },
-        {
-            to: '/Orders',
-            name: "Orders",
-            icon: OrdersIcon
-        },
-        {
-            to: '/Inventory',
-            name: "Inventory",
-            icon: InventoryIcon
-        },
-        {
-            to: '/Invoices',
-            name: "Invoices",
-            icon: InvoicesIcon
-        },
-        {
-            to: '/Data',
-            name: "Data",
-            icon: DataIcon
-        },
-
-
+        { to: '/', name: 'Main', icon: HomeIcon},
+        { to: '/Products', name: "Products", icon: ProductsIcon},
+        { to: '/Orders', name: "Orders", icon: OrdersIcon},
+        { to: '/Inventory', name: "Inventory", icon: InventoryIcon},
+        { to: '/Invoices', name: "Invoices", icon: InvoicesIcon},
+        { to: '/Data', name: "Data", icon: DataIcon},
     ]
     return(
         <div className="NavBar">
