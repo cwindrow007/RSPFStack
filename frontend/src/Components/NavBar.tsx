@@ -1,15 +1,15 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import  '../CSS/NavBar.css'
 
 //Import Icons
-
 import HomeIcon from "../Icons/Home.png";
 import ProductsIcon from "../Icons/Products.png";
 import OrdersIcon from "../Icons/Orders.png";
 import InventoryIcon from "../Icons/Inventory.png";
 import InvoicesIcon from "../Icons/Invoices.png";
 import DataIcon from "../Icons/Data.png";
-import logo from "../Icons/R__1___1_-removebg-preview.png"
+import logo from "../Icons/LogoIcon.png"
 
 
 /** Nav Bar, holds data to links on the left side and program logo*/
@@ -51,18 +51,19 @@ const NavBar = () =>{
     return(
         <div className="NavBar">
             {/*Program Logo */}
-            <h1 className = "Placeholder">
-                <img src = {logo}/>
-                RSPF Inventory System
-            </h1>
+            <img className = "header-logo" src = {logo} alt = "RSPF Logo"/>
             <div>
-                {linker.map(link=>(
-                    <Link to={link.to}>
-                    <ul>
-                        <img src = {link.icon} alt = {link.name}/>
+                <h1 className="Header">Pages</h1>
+                <ul>
+                {linker.map((link, index)=>(
+                    <li key = {index} className = "nav-item">
+                    <Link to={link.to} className = "nav-link">
+                        <img src = {link.icon} alt={`${link.name} Icon`} className="nav-icon"/>
                         {link.name}
-                    </ul>
-                </Link>))}
+                    </Link>
+                    </li>
+                ))}
+                </ul>
             </div>
         </div>
     );
