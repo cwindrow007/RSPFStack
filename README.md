@@ -1,6 +1,6 @@
 # RSPFStack
 
-![logo](logo.png)
+![Logo.png](Logo.png)
 the RSPF stack (React, Spring boot, Python/PostgreSql, Firebase) is a full-stack development project aimed to be a 
 robust inventory management system with an authentication system. It is local and will be able to be run on a raspberry Pi.
 
