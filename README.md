@@ -59,8 +59,8 @@ If a user specifies is case, the system will only ask for number of cases, else 
 ### Inventory Counts
 Inventory counts is a page in which the user can access total value of products on hand (top right), 
 Total number of products under specific table (in middle), and adjust inventory counts manually (top right). To adjust a count of 
-a product the user must first query the database to find the product location. One the product is found the user can 
-specify whether they want to add, remove, or move a product to a separate table. 
+a product the user must first query the database to find the product location. Once the product is found the user can 
+specify whether they want to add, remove, or move a product to a separate table.
 ### Invoices 
 This displays a list of invoices stored both in the database and the program. Has the invoice number, date added, and vendor.
 User can sort by invoice number, date, or specific vendor. 
