@@ -2,9 +2,9 @@ package org.rspf.backend.controller;
 
 import jakarta.persistence.EntityManager;
 import jakarta.transaction.Transactional;
-import org.apache.coyote.Response;
 import org.springframework.http.ResponseEntity;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.concurrent.Executors;
@@ -17,6 +17,10 @@ public class ProductTestController {
 
     @Autowired
     private EntityManager entityManager;
+
+    @Autowired
+    private ApplicationContext applicationContext;
+
 
     @PostMapping("/create-table")
     @Transactional
@@ -50,7 +54,8 @@ public class ProductTestController {
     public ResponseEntity<String> TableDeleteTimer() {
         Executors.newSingleThreadScheduledExecutor().schedule(() -> {
             try {
-                deleteTable();
+                ProductTestController proxy = applicationContext.getBean(ProductTestController.class);
+                proxy.deleteTable();
             } catch (Exception e) {
                 System.err.println("Error during table deletion: " + e.getMessage());
             }

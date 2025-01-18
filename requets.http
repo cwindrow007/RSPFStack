@@ -1,4 +1,4 @@
-POST http://localhost:8080/api/test/products/delete-table
+POST http://localhost:8080/api/test/products/create-table
 
 ###
 GET http://localhost:8080/api/test/products/delete-table
