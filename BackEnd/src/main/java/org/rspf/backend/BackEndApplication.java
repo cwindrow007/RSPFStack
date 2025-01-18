@@ -1,4 +1,4 @@
-package org.example.backend;
+package org.rspf.backend;
 
 import io.github.cdimascio.dotenv.Dotenv;
 import org.springframework.boot.SpringApplication;

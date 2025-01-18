@@ -1,0 +1,4 @@
+POST http://localhost:8080/api/test/products/delete-table
+
+###
+GET http://localhost:8080/api/test/products/delete-table
