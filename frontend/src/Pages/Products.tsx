@@ -8,7 +8,7 @@ const Products: React.FC = () => {
         <div>
             <TopNav/>
             <LeftNav/>
-            <h1>Products</h1>
+            <h1 className = "text-2xl text-black font-bold">Products</h1>
             <p>This is the Products Page</p>
             <TableCreation/>
         </div>

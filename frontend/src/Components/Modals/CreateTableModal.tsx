@@ -41,7 +41,8 @@ const CreateTableModal: React.FC = () => {
        // }
 return(
     <>
-        <button onClick={() => setModalIsOpen(true)}> Create Table</button>
+        <button className="bg-green-600 hover:bg-green-400 text-white font-bold py-2.5
+            px-5 border-b-4 border-green-800 hover:border-green-500 rounded" onClick={() => setModalIsOpen(true)}> Create Table</button>
         <Modal isOpen={modalIsOpen} onCloseReques={() => setModalIsOpen(false)}>
             <h3>Create New Table</h3>
             <div>
@@ -56,7 +57,8 @@ return(
             { /*Section For UserPermissions such as Admin User*/}
             </div>
             {/* Table Creation Button */}
-            <button onClick = {() => setModalIsOpen(false)}> Cancel</button>
+            <button  className="bg-red-600 hover:bg-red-400 text-white font-bold py-2.5
+            px-5 border-b-4 border-red-800 hover:border-red-500 rounded" onClick = {() => setModalIsOpen(false)}> Cancel</button>
         </Modal>
     </>
 );
