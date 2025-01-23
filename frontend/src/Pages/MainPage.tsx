@@ -7,7 +7,7 @@ const MainPage: React.FC = () => {
     return(
         <div>
             <LeftNav/>
-            <h1>Welcome to the RSPF Inventory Management System</h1>
+            <h1 className="text=4xl text-blue-500 font-bold">Welcome to the RSPF Inventory Management System</h1>
             <p>This page is yet to be filled but for now it is in testing before design and layout</p>
         </div>
     );
