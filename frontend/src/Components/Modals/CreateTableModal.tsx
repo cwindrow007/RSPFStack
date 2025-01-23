@@ -10,7 +10,6 @@
  * - BackendServices
  * - ProductsList
  * - ProductsPage
- *
  */
 import React, {useState} from "react";
 import Modal from "react-modal";
@@ -21,7 +20,7 @@ import Modal from "react-modal";
 
 const CreateTableModal: React.FC = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
-    const [tableName, setTableName] = useState(" ");
+    const [tableName, setTableName] = useState (" ");
     /**
      * Admin/User Access sector, Needs firebase/UserManage. for integration.
      *
