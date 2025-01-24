@@ -13,6 +13,7 @@
     "@types/react-router-dom": "^5.3.3",
     "autoprefixer": "^10.4.20",
     "css": "^3.0.0",
+    "http-proxy-middleware": "^3.0.3",
     "post": "^0.0.1",
     "postcss": "^8.5.1",
     "react": "^18.3.1",
