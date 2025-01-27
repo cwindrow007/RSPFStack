@@ -13,6 +13,7 @@
  */
 import React, {useState} from "react";
 import Modal from "react-modal";
+import NewEntryForm from "./NewEntryForm";
 //Back End Import Sect
 
 
@@ -59,6 +60,7 @@ return(
             {/* Table Creation Button */}
             <button  className="bg-red-600 hover:bg-red-400 text-white font-bold py-2.5
             px-5 border-b-4 border-red-800 hover:border-red-500 rounded" onClick = {() => setModalIsOpen(false)}> Cancel</button>
+            <NewEntryForm/>
         </Modal>
     </>
 );

@@ -2,7 +2,6 @@ import React from 'react';
 import TopNav from "../Components/TopBar";
 import LeftNav from "../Components/NavBar";
 import TableCreationButton from "../Components/Modals/CreateTableModal";
-import NewEntryForm from "../Components/Modals/NewEntryForm";
 
 const Products: React.FC = () => {
     return(
@@ -18,7 +17,6 @@ const Products: React.FC = () => {
                     </h1>
                     <p>Products Info</p>
                     <TableCreationButton/>
-                    <NewEntryForm/>
                 </div>
             </main>
         </div>
