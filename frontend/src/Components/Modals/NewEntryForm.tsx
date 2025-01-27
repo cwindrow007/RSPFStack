@@ -58,7 +58,14 @@ const NewEntryForm: React.FC = () => {
                 onChange = {(e) => setProductSize(e.target.value)}
                     />
             </div>
-            <div>Manufacturer: </div>
+            <div>
+                <label>Manufacturer: </label>
+                <input
+                    type ="text"
+                    value = {manufacturer}
+                    onChange={(e) => setManufacturer(e.target.value)}
+                    />
+            </div>
             <div>Price: </div>
             <div>UPC: </div>
             <div>Number in case: </div>
