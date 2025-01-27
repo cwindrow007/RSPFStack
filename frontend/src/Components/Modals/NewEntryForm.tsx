@@ -12,7 +12,7 @@ const NewEntryForm: React.FC = () => {
    // const [size, setSize] = useState("");
     const [price, setPrice] = useState("");
     const [upcCode, setUpcCode] = useState("");
-    const [numberInCase, setNumerIncCase] = useState("");
+    const [numberInCase, setNumberInCase] = useState("");
 
     //Variables declared on entry submit
 
@@ -51,7 +51,7 @@ const NewEntryForm: React.FC = () => {
                 />
             </div>
             <div>
-                <label>Product Size:</label>
+                <label>Product Size: </label>
                 <input
                 type = "text"
                 value = {productSize}
@@ -66,9 +66,30 @@ const NewEntryForm: React.FC = () => {
                     onChange={(e) => setManufacturer(e.target.value)}
                     />
             </div>
-            <div>Price: </div>
-            <div>UPC: </div>
-            <div>Number in case: </div>
+            <div>
+                <label>Price: </label>
+                <input
+                    type = "text"
+                    value = {price}
+                    onChange = {(e) => setPrice(e.target.value)}
+                />
+            </div>
+            <div>
+                <label>Upc Code: </label>
+                <input
+                    type = "text"
+                    value = {upcCode}
+                    onChange = {(e) => setUpcCode(e.target.value)}
+                />
+            </div>
+            <div>
+                <label>Number in case: </label>
+                <input
+                    type="text"
+                    value = {numberInCase}
+                    onChange={(e) => setNumberInCase(e.target.value)}
+                    />
+            </div>
 
         </form>
 );
