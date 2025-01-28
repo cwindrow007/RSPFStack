@@ -46,18 +46,15 @@ return(
             px-5 border-b-4 border-green-800 hover:border-green-500 rounded" onClick={() => setModalIsOpen(true)}> Create Table</button>
         <Modal isOpen={modalIsOpen} onCloseReques={() => setModalIsOpen(false)}>
             <h3>Create New Table</h3>
-            <div>
-                <label> Table Name: </label>
-                <input type = "text"
-                       value={tableName}
-                       onChange={(e) => setTableName(e.target.value)}
-                       />
-            </div>
 
             <div>
+
             { /*Section For UserPermissions such as Admin User*/}
+
             </div>
+            
             {/* Table Creation Button */}
+
             <button  className="bg-red-600 hover:bg-red-400 text-white font-bold py-2.5
             px-5 border-b-4 border-red-800 hover:border-red-500 rounded" onClick = {() => setModalIsOpen(false)}> Cancel</button>
             <NewEntryForm/>

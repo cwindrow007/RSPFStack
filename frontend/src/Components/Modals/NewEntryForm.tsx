@@ -37,6 +37,8 @@ const NewEntryForm: React.FC = () => {
             <div>
                 <label>Table Name: </label>
                 <input
+                    className="appearance-none block w-full bg-gray-200 text-gray-700 border-2 border-black rounded py-3 px-4 mb-3 leading-tight focus:outline-blue-500 focus:bg-white"
+                    placeholder="Table Name"
                     type = "text"
                     value = {tableName}
                     onChange={(e) => setTableName(e.target.value)}
@@ -45,6 +47,8 @@ const NewEntryForm: React.FC = () => {
             <div>
                 <label>Product Name: </label>
                 <input
+                    className="appearance-none block w-full bg-gray-200 text-gray-700 border-2 border-black rounded py-3 px-4 mb-3 leading-tight focus:outline-blue-500 focus:bg-white"
+                    placeholder= "Product Name"
                     type = "text"
                     value = {productName}
                     onChange={(e) => setProductName(e.target.value)}
@@ -53,14 +57,18 @@ const NewEntryForm: React.FC = () => {
             <div>
                 <label>Product Size: </label>
                 <input
-                type = "text"
-                value = {productSize}
-                onChange = {(e) => setProductSize(e.target.value)}
+                    className="appearance-none block w-full bg-gray-200 text-gray-700 border-2 border-black rounded py-3 px-4 mb-3 leading-tight focus:outline-blue-500 focus:bg-white"
+                    placeholder="750ml"
+                    type = "text"
+                    value = {productSize}
+                    onChange = {(e) => setProductSize(e.target.value)}
                     />
             </div>
             <div>
                 <label>Manufacturer: </label>
                 <input
+                    className="appearance-none block w-full bg-gray-200 text-gray-700 border-2 border-black rounded py-3 px-4 mb-3 leading-tight focus:outline-blue-500 focus:bg-white"
+
                     type ="text"
                     value = {manufacturer}
                     onChange={(e) => setManufacturer(e.target.value)}
@@ -69,6 +77,8 @@ const NewEntryForm: React.FC = () => {
             <div>
                 <label>Price: </label>
                 <input
+                    className="appearance-none block w-full bg-gray-200 text-gray-700 border-2 border-black rounded py-3 px-4 mb-3 leading-tight focus:outline-blue-500 focus:bg-white"
+                    placeholder="$10.99"
                     type = "text"
                     value = {price}
                     onChange = {(e) => setPrice(e.target.value)}
@@ -77,6 +87,8 @@ const NewEntryForm: React.FC = () => {
             <div>
                 <label>Upc Code: </label>
                 <input
+                    className="appearance-none block w-full bg-gray-200 text-gray-700 border-2 border-black rounded py-3 px-4 mb-3 leading-tight focus:outline-blue-500 focus:bg-white"
+                    placeholder="1234567890"
                     type = "text"
                     value = {upcCode}
                     onChange = {(e) => setUpcCode(e.target.value)}
@@ -85,6 +97,7 @@ const NewEntryForm: React.FC = () => {
             <div>
                 <label>Number in case: </label>
                 <input
+
                     type="text"
                     value = {numberInCase}
                     onChange={(e) => setNumberInCase(e.target.value)}
