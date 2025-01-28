@@ -52,7 +52,7 @@ return(
             { /*Section For UserPermissions such as Admin User*/}
 
             </div>
-            
+
             {/* Table Creation Button */}
 
             <button  className="bg-red-600 hover:bg-red-400 text-white font-bold py-2.5
