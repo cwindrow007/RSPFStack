@@ -4,7 +4,8 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 *.env
-
+docker-compose.yml
+docker-compose.override.yml
 ### STS ###
 .apt_generated
 .classpath
