@@ -2,3 +2,7 @@ POST http://localhost:8080/api/test/products/create-table
 
 ###
 GET http://localhost:8080/api/test/products/delete-table
+
+
+### Creat Table Test
+POST http://localhost:8080/api/tables/create?tableName=Test
