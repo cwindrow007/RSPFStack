@@ -6,6 +6,9 @@ import jakarta.transaction.Transactional;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.sql.Connection;
+import java.sql.Statement;
+
 @RestController
 @RequestMapping("/api/tables")
 public class TableController {
@@ -21,16 +24,17 @@ public class TableController {
     public ResponseEntity<String> CreateTable(@RequestParam String tableName){
         try{
             //Ensure The table is safe
-            tableName = tableName.replaceAll("[^a-zA-Z0-9]","");
+            tableName = tableName.replaceAll("[^a-zA-z0-9]", "");
 
-            //Creates Table if non Existence
-            String sql = "CREATE TABLE IF NOT EXISTS "+tableName+" (" +
-                    "id SERIAL PRIMARY KEY, " +
-                    "name VARCHAR(255), " +
-                    "price NUMERIC, "+
-                    "quantity INTEGER, "+
-                    "vendor VARCHAR(255))";
-            entityManager.createNativeQuery(sql).executeUpdate();
+            //Direct JDBC Connection
+            entityManager.unwrap(Connection.class).createStatement().executeUpdate(
+                    "Create TABLE IF NOT EXIST " + tableName + " ("
+                    + "id SERIAL PRIMARY KEY, "
+                    + "name VARCHAR(255), "
+                    + "price NUMERIC, "
+                    + "quantity INTEGER, "
+                    + "vendor VARCHAR(255))"
+            );
             return ResponseEntity.ok("Table " + tableName+ " created");
         }catch(Exception e){
             return ResponseEntity.status(500).body("Error Creating this table: " + e.getMessage());
