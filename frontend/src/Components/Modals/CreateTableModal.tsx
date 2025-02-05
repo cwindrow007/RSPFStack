@@ -44,7 +44,9 @@ return(
     <>
         <button className="bg-green-600 hover:bg-green-400 text-white font-bold py-2.5
             px-5 border-b-4 border-green-800 hover:border-green-500 rounded" onClick={() => setModalIsOpen(true)}> Create Table</button>
-        <Modal isOpen={modalIsOpen} onCloseReques={() => setModalIsOpen(false)}>
+        <Modal isOpen={modalIsOpen} onCloseRequest={() => setModalIsOpen(false)}
+        className="bg-white rounded-lg p-6 w-96 shadow-xl mx-auto"
+               overlayClassName="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center" >
             <h3>Create New Table</h3>
 
             <div>
