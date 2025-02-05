@@ -25,7 +25,7 @@ const NavBar = () =>{
     return(
         <div className="NavBar">
             {/*Program Logo */}
-            <img className = "header-logo" src = {logo} alt = "RSPF Logo"/>
+            {/* <img className = "header-logo" src = {logo} alt = "RSPF Logo"/> */}
             <div>
                 <h1 className="Header">Pages</h1>
                 <ul>
