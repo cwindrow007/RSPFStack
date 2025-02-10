@@ -7,4 +7,14 @@ export const cardData = [
         route: routeMap.products
 
     },
+    {
+        title: "Inventory",
+        Description: "Access Inventory",
+        route: routeMap.inventory
+    },
+    {
+        title: "Orders",
+        Description: "Access Orders",
+        route: routeMap.orders
+    }
 ]
