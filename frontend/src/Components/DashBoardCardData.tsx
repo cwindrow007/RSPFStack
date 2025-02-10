@@ -1,4 +1,7 @@
 import { routeMap } from "../EventHandlers/routeMap";
+import ProductsIcon from "../Icons/Products.png";
+import OrdersIcon from "../Icons/Orders.png";
+import InventoryIcon from "../Icons/Inventory.png";
 
 export const cardData = [
     {
@@ -10,11 +13,14 @@ export const cardData = [
     {
         title: "Inventory",
         Description: "Access Inventory",
+        icon: OrdersIcon,
         route: routeMap.inventory
     },
     {
         title: "Orders",
         Description: "Access Orders",
+        icon: InventoryIcon,
         route: routeMap.orders
     }
 ]
+export default cardData;

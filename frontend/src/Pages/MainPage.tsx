@@ -1,6 +1,7 @@
 import React from 'react';
 import LeftNav from "../Components/NavBar";
 import TopBar from "../Components/TopBar"
+import QuickAction from "../Components/Modals/QuickActionModal"
 
 const MainPage: React.FC = () => {
     return(
@@ -17,6 +18,7 @@ const MainPage: React.FC = () => {
                     <p>
                         This page is yet to be filled but for now it is in testing before design and layout
                     </p>
+                    <QuickAction/>
                 </div>
             </main>
         </div>
