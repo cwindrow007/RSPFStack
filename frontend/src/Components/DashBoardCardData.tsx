@@ -7,19 +7,20 @@ export const cardData = [
     {
         title: "New Product",
         Description: "Create a new product Entry",
+        icon: <img src = {ProductsIcon}/>,
         route: routeMap.products
 
     },
     {
         title: "Inventory",
-        Description: "Access Inventory",
-        icon: OrdersIcon,
+        Description: "Check current Inventory",
+        icon: <img src = {InventoryIcon}/>,
         route: routeMap.inventory
     },
     {
-        title: "Orders",
-        Description: "Access Orders",
-        icon: InventoryIcon,
+        title: "Manage Orders",
+        Description: "Track and fulfill orders",
+        icon: <img src = {OrdersIcon}/>,
         route: routeMap.orders
     }
 ]
