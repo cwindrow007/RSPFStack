@@ -7,7 +7,7 @@ interface baseCardProps {
     route: string;
 }
 
-export function BaseCard({title, description, route}: baseCardProps){
+export function DashboardCard({title, description, route}: baseCardProps){
     const navigate = useNavigate();
 
     return(
