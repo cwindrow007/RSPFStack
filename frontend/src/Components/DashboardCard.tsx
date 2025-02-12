@@ -5,22 +5,28 @@ import {ReactNode} from "react";
 interface baseCardProps {
     title: string;
     Description: string;
+    buttonText: string;
     icon: ReactNode;
     route: string;
 }
 
-export function DashboardCard({title, Description, icon, route}: baseCardProps){
+export function DashboardCard({title, Description, buttonText, icon, route}: baseCardProps){
     const navigate = useNavigate();
 
     return(
-        <div>
-            <h3>{title}</h3>
-            <p>{Description}</p>
-            <div>{icon}</div>
-
+        <div className = "border rouded-lg shadow-md p-6 bg-white hover:shadow-lg cursor-pointer flex items-center">
             <div>
-                <button onClick={() => navigate(route)}>
-                </button>
+                <h3 className = "text-xl font-semibold">{title}</h3>
+                <p className = "text-gray-600 my-2">{Description}</p>
+                <div>{icon}</div>
+
+                <div>
+                    <button
+                    className="bg-blue-500 text-white px-4 py-2 rouded hover:bg-blue-600 transition"
+                        onClick={() => navigate(route)}>
+                    {buttonText}
+                    </button>
+                </div>
             </div>
         </div>
     );
