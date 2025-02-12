@@ -14,11 +14,11 @@ export function DashboardCard({title, Description, buttonText, icon, route}: bas
     const navigate = useNavigate();
 
     return(
-        <div className = "border rouded-lg shadow-md p-6 bg-white hover:shadow-lg cursor-pointer flex items-center">
+        <div className = "relative border rouded-lg shadow-md p-6 bg-white hover:shadow-lg cursor-pointer flex items-center">
             <div>
                 <h3 className = "text-xl font-semibold">{title}</h3>
                 <p className = "text-gray-600 my-2">{Description}</p>
-                <div>{icon}</div>
+                <div className = "absolute top-3 right-3 text-2xl text-gray-500 ">{icon}</div>
 
                 <div>
                     <button

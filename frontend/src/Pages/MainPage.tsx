@@ -10,14 +10,12 @@ const MainPage: React.FC = () => {
                 <TopBar/>
                 <LeftNav/>
             </aside>
-            <main className = "flex-1 flex items-center justify-center">
+            <main className = "m-6 border-3 flex-1 flex items-top justify-center">
                 <div className="text-center">
                     <h1 className="text-3xl text-blue-500  underline font-bold">
                         Welcome to the RSPF Inventory Management System
                     </h1>
-                    <p>
-                        This page is yet to be filled but for now it is in testing before design and layout
-                    </p>
+                    <p>Select from one of the options below or use the left navigation</p>
                     <QuickAction/>
                 </div>
             </main>
