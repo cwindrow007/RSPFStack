@@ -1,8 +1,12 @@
 
 import DateTime from "../EventHandlers/DateTime"
+import ModeToggle from "./UserDarkMode"
 const TopBar = () =>{
     return(
-        <DateTime/>
+        <div>
+            <ModeToggle/>
+            <DateTime/>
+        </div>
     );
 };
 

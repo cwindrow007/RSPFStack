@@ -5,7 +5,7 @@ import QuickAction from "../Components/Modals/QuickActionModal"
 
 const MainPage: React.FC = () => {
     return(
-        <div className="flex h-screen">
+        <div className="flex h-screen bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
             <aside className="flex-shrink-0">
                 <TopBar/>
                 <LeftNav/>

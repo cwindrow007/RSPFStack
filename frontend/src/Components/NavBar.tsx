@@ -23,7 +23,7 @@ const NavBar = () =>{
         { to: '/Data', name: "Data", icon: DataIcon},
     ]
     return(
-        <div className="NavBar">
+        <div className="NavBar bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
             {/*Program Logo */}
             {/* <img className = "header-logo" src = {logo} alt = "RSPF Logo"/> */}
             <div>
@@ -31,9 +31,9 @@ const NavBar = () =>{
                 <ul>
                 {linker.map((link, index)=>(
                     <li key = {index} className = "nav-item">
-                    <Link to={link.to} className = "nav-link">
-                        <img src = {link.icon} alt={`${link.name} Icon`} className="nav-icon"/>
-                        {link.name}
+                    <Link to={link.to} className = "nav-link ">
+                        <img src = {link.icon} alt={`${link.name} Icon`} className="nav-icon text-black dark:invert"/>
+                        <span>{link.name}</span>
                     </Link>
                     </li>
                 ))}
