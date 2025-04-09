@@ -16,7 +16,7 @@ const NewEntryForm: React.FC = () => {
 
     //Variables declared on entry submit
 
-    /* const subtmitEntry = async () => {
+    /* const submitEntry = async () => {
         const product: ProductEntry = {
             tableName,
             productName,
@@ -97,7 +97,8 @@ const NewEntryForm: React.FC = () => {
             <div>
                 <label>Number in case: </label>
                 <input
-
+                    className="appearance-none block w-full bg-gray-200 text-gray-700 border-2 border-black rounded py-3 px-4 mb-3 leading-tight focus:outline-blue-500 focus:bg-white"
+                    placeholder="e.g., 4"
                     type="text"
                     value = {numberInCase}
                     onChange={(e) => setNumberInCase(e.target.value)}
